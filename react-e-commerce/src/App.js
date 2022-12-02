@@ -10,6 +10,7 @@ import { GlobalStyle } from "./GlobalStyle";
 import { ThemeProvider } from "styled-components";
 import ErrorPage from "./ErrorPage.js";
 import Header from "./components/Header";
+import Footer from './components/Footer';
 
 
 const App = () => {
@@ -53,6 +54,7 @@ const App = () => {
               < Route path="/cart" element={<  Cart />} />
               < Route path="*" element={<  ErrorPage />} />
           </Routes>
+          <Footer />
       </Router>  
     </ThemeProvider>
   );

@@ -37,6 +37,10 @@ h3,
 h4 {
    font-family: "Work Sans", sans-serif;
 }
+a{
+  color :${({ theme }) => theme.colors.white}; 
+  font-size: 2rem;
+}
 h1 {
   color: ${({ theme }) => theme.colors.heading};
   font-size: 6rem;
